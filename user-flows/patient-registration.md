@@ -11,6 +11,9 @@
 - **Desk**: Healthcare workspace > Patient > New
 - **Portal**: `/patient-registration` web form (guest access)
 
+  ### Patient Registration (Web Form)
+![Patient Registration Web Form](../assets/images/Patient-web-form.png)
+
 ## Steps
 
 1. **Fill demographics**
