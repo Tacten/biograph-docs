@@ -30,7 +30,10 @@
 4. **Duplicate check**
    - Automatic: `check_patient_duplicates(patient)` runs on save
    - Error: Warns if matching patient found
+## Screenshots
 
+### Patient Registration (Desk)
+![Patient Registration](../assets/images/Patient%20form.png)
 ## Error States
 
 - Duplicate patient detected → warning shown, admin decides to proceed or merge
