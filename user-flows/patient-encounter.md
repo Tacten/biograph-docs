@@ -15,23 +15,33 @@
    - Screen: Patient Encounter form > Symptoms section
    - User action: Add complaints from master list
    - Data changed: Patient Encounter Symptom child records
+  
+     ![Symptoms](../assets/images/Patient-encounter-symptoms.png)
 
 2. **Record diagnoses**
    - User action: Add diagnoses (linked to medical codes)
    - Data changed: Patient Encounter Diagnosis child records
+  
+     ![Encounter Diagnosis](../assets/images/Patient-encounter-diagnosis.png)
 
 3. **Prescribe medications**
    - User action: Add drugs with dosage, duration, frequency
    - API: `get_medications_query()` for autocomplete, `get_medications(medication)` for details
    - Data changed: Drug Prescription child records
+  
+     ![Medications](../assets/images/Patient-encounter-medications.png)
 
 4. **Order lab tests**
    - User action: Add lab test items
    - Data changed: Lab Prescription child records
+  
+     ![Investigations](../assets/images/Patient-encounter-investigations.png)
 
 5. **Order procedures**
    - User action: Add clinical procedure items
    - Data changed: Procedure Prescription child records
+  
+     ![Procedures](../assets/images/Patient-encounter-procedures.png)
 
 6. **Apply treatment plan** *(optional)*
    - User action: Click "Get Treatment Plan"
@@ -41,6 +51,8 @@
 7. **Add clinical notes** *(optional)*
    - User action: Write SOAP-style notes
    - API: `add_clinical_note(note, note_type)`, `edit_clinical_note()`, `delete_clinical_note()`
+  
+     ![Notes](../assets/images/Patient-encounter-notes.png)
 
 8. **Submit encounter**
    - User action: Submit
@@ -52,6 +64,8 @@
 9. **Create sidebar orders** *(alternative)*
    - User action: Use encounter sidebar widget to order individually
    - API: `create_service_request_from_widget(encounter, data)`
+  
+     ![Patient Encounter](../assets/images/Patient-encounter.png)
 
 ## Error States
 
