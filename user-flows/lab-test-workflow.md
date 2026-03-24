@@ -58,7 +58,7 @@
    - API: `lab_test.update_status(status, name)`
    - Data changed: Lab Test status → Completed/Approved
   
-    
+    ![Lab Test Result](../assets/images/Lab-test-result.png)
 
 ## Error States
 
