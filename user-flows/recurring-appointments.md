@@ -29,6 +29,8 @@ Patient Appointment form > Recurring Appointments
 5. **Book all appointments**
    - API: `recuring_appointment_handler.book_appointments(data)` or `create_recurring_appointments(data)`
    - Data changed: Multiple Patient Appointment records created in batch
+  
+     ![Repeat Appointment](../assets/images/Patient-repeat-appointment.png)
 
 ## Error States
 
