@@ -8,6 +8,8 @@
 
 Desk > Patient Appointment > New
 
+![Appointment Form](../assets/images/Patient-appointment-form.png)
+
 ## Steps
 
 1. **Select patient**
@@ -41,6 +43,8 @@ Desk > Patient Appointment > New
    - User action: Click "Create > Patient Encounter"
    - API: `make_encounter(source_name)`
    - Data changed: Patient Encounter created, linked to appointment
+  
+     ![Appointment Booked](../assets/images/Patient-appointment-booked.png)
 
 ## Error States
 
