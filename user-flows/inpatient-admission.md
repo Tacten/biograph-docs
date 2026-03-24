@@ -23,6 +23,8 @@ Patient Encounter > Admission Order → Treatment Counselling
    - User action: Assign bed/ward and check-in
    - API: `inpatient_record.admit(service_unit, check_in, expected_discharge, currency, price_list)` (instance)
    - Data changed: Inpatient Record status → Admitted, Inpatient Occupancy created
+  
+     ![IP Admission](../assets/images/Patient-IP-admission.png)
 
 4. **Daily billing** *(automatic)*
    - Scheduler: `add_occupied_service_unit_in_ip_to_billables` runs daily
@@ -35,6 +37,8 @@ Patient Encounter > Admission Order → Treatment Counselling
 6. **Transfer** *(if bed change needed)*
    - API: `inpatient_record.transfer(new_service_unit, check_in, leave_from)` (instance)
    - Data changed: New Inpatient Occupancy entry, previous one closed
+  
+     ![IP Room Transfer](../assets/images/Patient-IP-roomtransfer.png)
 
 7. **Discharge**
    - API: `inpatient_record.discharge()` (instance)
@@ -43,6 +47,8 @@ Patient Encounter > Admission Order → Treatment Counselling
 8. **Discharge summary**
    - API: `inpatient_record.make_discharge_summary(source_name)`
    - Data changed: Discharge Summary document created
+  
+     ![IP Discharge](../assets/images/Patient-IP-Discharge.png)
 
 9. **Create insurance coverage** *(if insured)*
    - API: `inpatient_record.create_insurance_coverage()` (instance)
