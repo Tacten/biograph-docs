@@ -35,6 +35,8 @@ Patient Encounter > Make IP Medication Order (`make_ip_medication_order`)
 6. **Reconcile differences** *(if wastage/returns)*
    - API: `inpatient_medication_entry.make_difference_stock_entry(docname)`
    - Data changed: Additional Stock Entry for differences
+  
+     ![IP Prescriptions](../assets/images/Patient-IP-prescriptions.png)
 
 ## Error States
 
