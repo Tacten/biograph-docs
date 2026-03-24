@@ -29,6 +29,8 @@ Referrals in Biograph are implemented through the **Service Request** DocType. W
 3. **Submit the encounter**
    - User action: Submit the Patient Encounter
    - Trigger: `create_patient_referral(encounter, references)` (patient_encounter.py line 817–843)
+  
+     ![Referral](../assets/images/Patient-referral.png)
 
 4. **System creates Service Request(s)**
    - For each reference row in the encounter:
