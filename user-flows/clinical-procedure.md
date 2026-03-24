@@ -22,11 +22,15 @@ Service Request from Patient Encounter
    - User action: Click "Start"
    - API: `clinical_procedure.start_procedure()` (instance method)
    - Data changed: Procedure status → In Progress
+  
+     ![Clinical Procedure Progress](../assets/images/Patient-clinical-procedure-inprogress.png)
 
 4. **Complete procedure**
    - User action: Click "Complete"
    - API: `clinical_procedure.complete_procedure()` (instance method)
    - Data changed: Procedure status → Completed
+  
+     ![Clinical Procedure Completed](../assets/images/Clinical-procedure-completed.png)
 
 5. **Consume stocks**
    - Automatic: Stock entry created for consumed items
