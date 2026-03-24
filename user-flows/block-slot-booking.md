@@ -68,6 +68,8 @@ Each Healthcare Service Unit can allow overlapping appointments up to a configur
    - User action: Click an available slot button
    - Sets `appointment_time` and `duration` on the form
    - User completes remaining fields (patient, type) and saves
+  
+     ![Appointment Slot](../assets/images/Patient-appointment-slot.png)
 
 ## Steps — Block Booking (Custom Time)
 
@@ -84,6 +86,8 @@ Each Healthcare Service Unit can allow overlapping appointments up to a configur
    - API: `check_unavailability_conflicts(filters)` (JS line 635)
    - If conflicts: shows dialog listing affected appointments
    - If none: creates the appointment/unavailability block
+  
+     ![Block Booking](../assets/images/Block-booking.png)
 
 ## Configuration Points
 
