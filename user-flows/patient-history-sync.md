@@ -18,6 +18,8 @@ Patient history sync is **bidirectional**:
 
 1. **Load** (Patient → Encounter): When a new encounter is created, the system copies the patient's current medical history into the encounter form. This gives the physician a working copy to review and modify.
 
+ ![Encounter History Sync](../assets/images/Patient-encounter-historysync.png)  
+
 2. **Save back** (Encounter → Patient): When the encounter is submitted, any changes the physician made to the history fields are written back to the Patient master record.
 
 This ensures the Patient record always reflects the latest clinical information from the most recent encounter.
