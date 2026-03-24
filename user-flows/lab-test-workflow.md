@@ -9,6 +9,8 @@
 - Service Request created from Patient Encounter (on submit)
 - Direct: Desk > Lab Test > New
 
+  ![Lab Test](../assets/images/Patient-labtest.png)
+
 ## Steps
 
 1. **Service request created**
@@ -25,6 +27,8 @@
    - Screen: Sample Collection form
    - User action: Record sample details (type, collection time)
    - Data changed: Sample Collection record
+  
+   ![Sample Collection](../assets/images/patient-sample-collection.png)
 
 4. **Create observations**
    - User action: Select samples and create observations
@@ -35,11 +39,15 @@
    - User action: Enter test values (numeric, text, or select)
    - API: `observation.record_observation_result(values)`
    - Data changed: Observation result fields populated
+  
+     ![Test Result](../assets/images/Patient-test-result.png)
 
 6. **Approve observations**
    - User action: Set status to "Approved"
    - API: `observation.set_observation_status(observation, "Approved")`
    - Data changed: Observation status updated
+  
+     ![Observation](../assets/images/Patient-observation.png)
 
 7. **Generate diagnostic report**
    - Automatic or manual: Groups approved observations
@@ -49,6 +57,8 @@
 8. **Update lab test status**
    - API: `lab_test.update_status(status, name)`
    - Data changed: Lab Test status → Completed/Approved
+  
+    
 
 ## Error States
 
