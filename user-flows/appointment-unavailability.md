@@ -53,6 +53,8 @@ Biograph treats unavailability as a special appointment. When a block is marked 
    - Checks 4 overlap conditions: start-during, end-during, contains, exact-match
    - Throws `OverlapError` if the new appointment overlaps an unavailable block
    - In the slot selection UI (JS line 1154–1159): unavailable slots appear **disabled** with tooltip "Practitioner unavailable at this time"
+  
+     ![Practitioner Unavailability](../assets/images/Practioner-unavailability.png)
 
 6. **Cancel the unavailability**
    - Screen: Open the unavailable appointment
