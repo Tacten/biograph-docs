@@ -63,6 +63,8 @@ Biograph treats unavailability as a special appointment. When a block is marked 
    - API: `frappe.call("healthcare.healthcare.doctype.patient_appointment.patient_appointment.cancel_unavailability_appointment", { appointment_name })`
    - Backend: Directly sets status to "Cancelled" via `frappe.db.set_value()` (bypasses set_only_once validation)
    - Cancels linked calendar Event if it exists
+  
+     ![Practitioner Unavailability Cancel](../assets/images/Practioner-unavailable-cancel.png)
 
 ## Unavailable Appointment Fields
 
